@@ -15,6 +15,9 @@ console.log(hexadecimal, binary); //2730 11
 //name is used in another file
 (() => {
   let name = "Andrew1";
-  console.log(name1);
+  let isWorking = true; //vboolean
+
+  let another = undefined
+  console.log(another)
 
 })();
