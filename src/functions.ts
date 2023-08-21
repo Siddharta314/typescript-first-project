@@ -34,5 +34,18 @@ const printName = (name: string, surname: string) : string => {
 
 const printa = (str: string): void => console.log(str);
 
-
 printa(printName("Han", "Solo"));
+
+
+
+//objects as parameters
+const login = (data: {email: string; password: string})=>{
+  console.log(data.email, "\n***********");
+}
+
+login({
+  email:"google@gmail.com",
+  password: "password"
+});
+
+
