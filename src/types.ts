@@ -48,8 +48,17 @@ function createUser(user: userID ){
   //we only need to change the type in one place
 }
 
+//like enums
+let burgerSize: "M" | "L" | "XXL";
 
-let burgerSize: "M" | "L" | "XXL"
+
+//null values using ?
+function square(x: number | null){
+  return x ? x ** (1/2) : "was null";
+}
+
+console.log(square(9)) //3
+console.log(square(null)) // was null
 
 
 
