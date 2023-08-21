@@ -49,3 +49,33 @@ login({
 });
 
 
+
+//objects types
+type Product = {
+  name: string,
+  price: number
+}
+const products:Product[] = [];
+
+const addProduct = (data: {
+  name: string,
+  price: number
+}) => {
+  products.push(data);
+};
+
+addProduct({
+  name: "Ball",
+  price: 15
+})
+
+addProduct({
+  name:"Raquet",
+  price: 100
+})
+
+console.log(products) //[ { name: 'Ball', price: 15 }, { name: 'Raquet', price: 100 } ]
+
+
+
+
