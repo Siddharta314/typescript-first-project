@@ -38,6 +38,7 @@ console.log(bob); //BOB
 
 
 /********** NEVER **********/
+//if this is executed it will finish the process
 function throwError(errorMsg: string): never {
   throw new Error(errorMsg);
 }
