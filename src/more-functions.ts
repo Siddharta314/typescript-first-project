@@ -65,3 +65,20 @@ const number = add(1,2);
 const name2 = add("elvis", "costello")
 console.log(number.toExponential(2), name2.toLocaleUpperCase());
 
+/************* INTERFACES *************/
+//interfaces can inherit, types can't
+interface HumanInterface {
+  readonly name: string,
+  age: number
+}
+interface SupermanInterface extends HumanInterface {
+  power: string
+}
+
+const clark: SupermanInterface = {
+  name: "Clark",
+  age: 30,
+  power: "fly"
+}
+//clark.name = "Pepe" ERROR
+clark.age = 50; // NO ERROR
