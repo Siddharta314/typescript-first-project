@@ -157,3 +157,6 @@ dist
 .svelte-kit
 
 # End of https://www.toptal.com/developers/gitignore/api/linux,node
+
+static-code.ts
+src/app
