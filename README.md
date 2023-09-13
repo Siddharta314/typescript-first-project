@@ -36,3 +36,6 @@ npm install -D ts-node
 ```
 npx ts-node src/products/main.ts
 ```
+
+
+we can use quicktype to type a json or more formats
