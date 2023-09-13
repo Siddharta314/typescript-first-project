@@ -1,4 +1,6 @@
-export class Human {
+//import { Human, Player } from './inheritance';
+
+export abstract class Human {
   constructor(protected name: string) {}
 
   greeting() {
@@ -20,8 +22,8 @@ export class Player extends Human {
   }
 }
 
+// const human = new Human(); ERROR
 const james = new Player('James', 'poker');
 console.log(james.playing()); //James is playing poker
 
 console.log(james.greeting()); //Hello, my name is James
-
